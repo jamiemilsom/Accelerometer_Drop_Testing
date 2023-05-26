@@ -26,19 +26,19 @@ class AccelerometerDropTest:
           self.data = pd.read_csv(path)
           self.data.rename(columns={self.data.columns[0]: 'Time h/m/s/ms', self.data.columns[1]: 'Device Name'}, inplace=True)
           
-          self.data['Elapsed Time (ms)'] = (self.data.index / sample_rate_hz) * 1000
+          self.data['Time (ms)'] = (self.data.index / sample_rate_hz) * 1000
           self.data['Acceleration m/s^2'] = self.data['Acceleration Y(g)'] * 9.81
           
             
      def interpolate_acceleration(self):
           
-          min_time = self.data['Elapsed Time (ms)'].min()
-          max_time = self.data['Elapsed Time (ms)'].max()
+          min_time = self.data['Time (ms)'].min()
+          max_time = self.data['Time (ms)'].max()
           num_points = int((max_time - min_time) / 0.25) + 1
           self.TC_data = pd.DataFrame()
           self.TC_data['Time (ms)'] = np.linspace(min_time, max_time, num_points)
                 
-          acceleration_interp_func = interp1d(self.data['Elapsed Time (ms)'], self.data['Acceleration m/s^2'],kind='cubic')
+          acceleration_interp_func = interp1d(self.data['Time (ms)'], self.data['Acceleration m/s^2'],kind='cubic')
           self.TC_data['Acceleration m/s^2'] = acceleration_interp_func(self.TC_data['Time (ms)'])
           
      def calculate_velocity(self):
