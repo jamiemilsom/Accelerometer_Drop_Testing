@@ -1,4 +1,4 @@
-﻿时间,设备名称,Acceleration X(g),Acceleration Y(g),Acceleration Z(g),Angular velocity X(°/s),Angular velocity Y(°/s),Angular velocity Z(°/s),Angle X(°),Angle Y(°),Angle Z(°),Magnetic field X(ʯt),Magnetic field Y(ʯt),Magnetic field Z(ʯt),Temperature(℃),Quaternions 0(),Quaternions 1(),Quaternions 2(),Quaternions 3()
+﻿时间,设备名称,Acceleration X(g),Acceleration Y(g),Acceleration Z(g),Angular velocity X(°/s),Angular velocity Y(°/s),Angular velocity Z(°/s),Angle X(°),Angle Y(°),Angle Z(°),Magnetic field X(ʯt),Magnetic field Y(ʯt),Magnetic field Z(ʯt),Temperature(℃),Quaternions 0(),Quaternions 1(),Quaternions 2(),Quaternions 3(),
  12:04:26.746,WT901BLE67(10961A5BCFFE), -0.002, -1.003, -0.007, -0.122, 0, 0.305, -90.439, 0.154, -49.048, -21.233, 16.675, -8.492, 23.54, -0.64117, 0.64536, -0.2955, 0.29147,
  12:04:26.747,WT901BLE67(10961A5BCFFE), 0, -1.005, -0.006, -0.122, -0.183, -0.122, -90.439, 0.154, -49.048, -21.233, 16.675, -8.492, 23.54, -0.64117, 0.64536, -0.2955, 0.29147,
  12:04:26.747,WT901BLE67(10961A5BCFFE), -0.005, -1.004, -0.005, 0.061, 0.061, -0.061, -90.439, 0.154, -49.048, -21.233, 16.675, -8.492, 23.54, -0.64117, 0.64536, -0.2955, 0.29147,
