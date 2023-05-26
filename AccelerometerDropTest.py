@@ -5,7 +5,7 @@ from scipy.interpolate import interp1d
 from scipy.signal import convolve
 from scipy.integrate import cumtrapz
 
-class AccelerometerRecording:
+class AccelerometerDropTest:
      def __init__(self,path,sample_rate_hz):
           self.path = path
           
